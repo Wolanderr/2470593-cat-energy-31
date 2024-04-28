@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,7 +17,8 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-icon" src="images/header-logo.svg" alt="Логотип" width="190" height="38">
+        <img class="main-header__logo-icon" src="images/site-logo-mobile.svg" alt="Логотип" width="33" height="38">
+        <img class="main-header__site-name" src="images/site-name-logo-mobile.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
@@ -44,7 +49,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/chicken-can-500-desktop@1x.png 1x, images/chicken-can-500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chicken-can-500-tablet@1x.png 1x, images/chicken-can-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/chicken-can-500-mobile@1x.png" srcset="images/chicken-can-500-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с курицей 500г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy PRO 500 г</h3>
@@ -63,7 +72,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/chicken-can-1000-desktop@1x.png 1x, images/chicken-can-1000-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chicken-can-1000-tablet@1x.png 1x, images/chicken-can-1000-tablet@2x.png 2x">
+              <img class="card__image" src="images/chicken-can-1000-mobile@1x.png" srcset="images/chicken-can-1000-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с курицей 1000г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy PRO 1000 г</h3>
@@ -82,7 +95,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/fish-can-500-desktop@1x.png 1x, images/fish-can-500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/fish-can-500-tablet@1x.png 1x, images/fish-can-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/fish-can-500-mobile@1x.png" srcset="images/fish-can-500-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с рыбой 500г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy PRO 500 г</h3>
@@ -101,7 +118,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/fish-can-1000-desktop@1x.png 1x, images/fish-can-1000-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/fish-can-1000-tablet@1x.png 1x, images/fish-can-1000-tablet@2x.png 2x">
+              <img class="card__image" src="images/fish-can-1000-mobile@1x.png" srcset="images/fish-can-1000-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с рыбой 1000г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy PRO 1000 г</h3>
@@ -120,7 +141,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-can-500-desktop@1x.png 1x, images/buckwheat-can-500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-can-500-tablet@1x.png 1x, images/buckwheat-can-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/buckwheat-can-500-mobile@1x.png" srcset="images/buckwheat-can-500-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с гречкой 500г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy SLIM 500 г</h3>
@@ -139,7 +164,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-can-1000-desktop@1x.png 1x, images/buckwheat-can-1000-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-can-1000-tablet@1x.png 1x, images/buckwheat-can-1000-tablet@2x.png 2x">
+              <img class="card__image" src="images/buckwheat-can-1000-mobile@1x.png" srcset="images/buckwheat-can-1000-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с гречкой 1000г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy SLIM 1000 г</h3>
@@ -158,7 +187,11 @@
         <!-- карточка товара -->
         <li class="catalog__item card">
           <div class="card__image-wrapper">
-            <img class="card__image" src="#" alt="Упаковка корма" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/rice-can-500-desktop@1x.png 1x, images/rice-can-500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/rice-can-500-tablet@1x.png 1x, images/rice-can-500-tablet@2x.png 2x">
+              <img class="card__image" src="images/rice-can-500-mobile@1x.png" srcset="images/rice-can-500-mobile@2x.png 2x" width="140" height="107" alt="Упаковка корма с рисом 500г">
+            </picture>
           </div>
           <div class="card__content">
             <h3 class="card__heading">Cat Energy SLIM 500 г</h3>
@@ -269,7 +302,13 @@
         <h3 class="contacts__heading">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="map-image" src="#" alt="Как нас найти?" width="320" height="362">
+      <div class="contacts__map map">
+        <picture>
+          <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="map-image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Как нас найти?">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
