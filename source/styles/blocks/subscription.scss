@@ -1,0 +1,38 @@
+.subscription {
+
+}
+
+.subscription__heading {
+font-family: $secondary-font;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+color: $basic-black;
+}
+
+.subscription__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.subscription__form {
+
+}
+
+.subscription__email {
+font-family: $secondary-font;
+font-size: 20px;
+line-height: 30px;
+text-transform: uppercase;
+color: inherit;
+padding: 13px;
+}
+
+.subscription__button {
+  color: $basic-white;
+  background-color: $bg-basic-green;
+  padding: 15px 82px;
+  border: none;
+}

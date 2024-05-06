@@ -1,0 +1,30 @@
+.card {
+
+}
+
+.card__image-wrapper {
+
+}
+
+.card__image {
+
+}
+
+.card__content {
+
+}
+
+.card__heading {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $card-heading-color;
+  text-transform: uppercase;
+}
+
+.card__button {
+  color: $basic-white;
+  background-color: $bg-basic-green;
+  padding: 10px 109px;
+}
