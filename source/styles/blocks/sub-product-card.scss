@@ -1,0 +1,31 @@
+.sub-product-card {
+
+}
+
+.sub-product-card__title {
+font-family: $secondary-font;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+text-transform: uppercase;
+color: $card-heading-color;
+}
+
+.sub-product-card__list {
+font-size: 14px;
+line-height: 14px;
+}
+
+.sub-product-card__term {
+
+}
+
+.sub-product-card__definition {
+
+}
+
+.sub-product-card__button {
+  color: $basic-white;
+  background-color: $bg-basic-green;
+  padding: 10px 109px;
+}
