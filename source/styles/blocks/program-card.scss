@@ -22,4 +22,18 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+}
+
+.program-card__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  background-color: $basic-black;
+  position: absolute;
+  right: -35px;
+  top: 6px;
+  mask-image: url("../../icons/stack.svg#arrow-button");
+  mask-position: center;
+  mask-repeat: no-repeat;
 }

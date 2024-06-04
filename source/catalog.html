@@ -17,11 +17,15 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-icon" src="images/site-logo-mobile.svg" alt="Логотип" width="33" height="38">
-        <img class="main-header__site-name" src="images/site-name-logo-mobile.svg" alt="Cat Energy" width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="main-header__logo-icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <img class="main-header__site-name" src="images/site-name-mobile.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
+        <button class="main-navigation__toggle main-navigation__close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-navigation__wrapper">
@@ -294,7 +298,7 @@
       <form class="subscription__form" method="post" action="#">
         <label for="email">
           <span class="visually-hidden">Укажите Ваш email</span>
-          <input class="subscription__email" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" value="кuklachev@gmail.com">
+          <input class="subscription__email" type="email" name="email" id="email" placeholder="кuklachev@gmail.com">
         </label>
         <button class="subscription__button button" type="submit">Подписаться</button>
       </form>
@@ -302,7 +306,7 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts-wrapper catalog-contacts-wrapper">
+      <div class="contacts__wrapper contacts__wrapper--grey">
         <h3 class="contacts__heading">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -316,36 +320,32 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="logo-wrapper footer-logo">
-      <a class="footer-logo__link" href="index.html">
-        <img class="footer-logo__image" src="images/mobile-footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
-      </a>
-    </div>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item social__item--vk">
-          <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item social__item--youtube">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-        <li class="social__item social__item--telegram">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright-wrapper">
-      <a class="copyright" href="#">
-        <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="images/mobile-logo-html-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
-      </a>
-    </div>
+    <a class="footer-logo" href="index.html">
+      <img class="footer-logo__image" src="images/site-name-mobile.svg" alt="Логотип Cat Energy" width="128" height="24">
+    </a>
+
+    <ul class="social">
+      <li class="social__item social__item--vk">
+        <a class="social__link social__link--vk" href="#">
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+      </li>
+      <li class="social__item social__item--youtube">
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </li>
+      <li class="social__item social__item--telegram">
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+    </ul>
+
+    <a class="copyright" href="#">
+      <span class="copyright__text">HTML Academy</span>
+    </a>
+
   </footer>
 </body>
 

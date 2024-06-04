@@ -1,5 +1,16 @@
 .show-more {
+  position: relative;
+}
 
+.show-more::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #d3d3d3;
+  mask-image: url("../../icons/stack.svg#plus");
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
 
 .show-more__heading {
@@ -12,8 +23,7 @@
 }
 
 .show-more__button {
-background-color: #f2f2f2;
-color: $primary-color;
-padding: 10px 94px;
-
+  background-color: #f2f2f2;
+  color: $primary-color;
+  padding: 10px 94px;
 }

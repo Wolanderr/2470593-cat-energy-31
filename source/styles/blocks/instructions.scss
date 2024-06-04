@@ -19,6 +19,74 @@
 
 }
 
+.instructions__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+}
+
 .instructions__text {
 
+}
+
+.instructions__item--icon-leaf {
+  position: relative;
+}
+
+.instructions__item--icon-leaf::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-image: url("../../icons/icon-leaf.svg");
+  z-index: 1;
+  top: 14px;
+  left: 15px;
+}
+
+.instructions__item--icon-boiling-water {
+  position: relative;
+}
+
+.instructions__item--icon-boiling-water::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-image: url("../../icons/icon-boiling-water.svg");
+  z-index: 1;
+  top: 14px;
+  left: 15px;
+}
+
+.instructions__item--icon-eat {
+  position: relative;
+}
+
+.instructions__item--icon-eat::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-image: url("../../icons/icon-eat.svg");
+  z-index: 1;
+  top: 14px;
+  left: 15px;
+}
+
+.instructions__item--icon-clock {
+  position: relative;
+}
+
+.instructions__item--icon-clock::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-image: url("../../icons/icon-clock.svg");
+  z-index: 1;
+  top: 14px;
+  left: 15px;
 }

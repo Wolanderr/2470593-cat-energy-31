@@ -1,0 +1,13 @@
+.loss {
+  position: relative;
+}
+
+.loss::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../icons/slim-black-cat.svg");
+  left: 157px;
+  top: -5px;
+}
