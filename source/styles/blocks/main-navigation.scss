@@ -2,8 +2,24 @@
 
 }
 
-.main-navigation__toggle {
+.main-navigation__close {
+  display: none;
+  width: 18px;
+  height: 18px;
+  background-color: $basic-black;
+  mask-image: url("../../icons/stack.svg#close-menu-mobile");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
 
+.main-navigation__toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: $basic-black;
+  mask-image: url("../../icons/stack.svg#menu-toggle-mobile");
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
 
 .main-navigation__wrapper {

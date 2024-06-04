@@ -6,3 +6,31 @@ body {
   background-color: $basic-white;
   color: $primary-color;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.feedback {
+  color: black;
+}
+
+.feedback ul {
+  list-style: none;
+}
+
+.feedback p {
+  margin-bottom: 0;
+}
+
+*,
+ *::before,
+ *::after {
+  box-sizing: border-box;
+}

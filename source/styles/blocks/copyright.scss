@@ -6,8 +6,16 @@
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
+  position: relative;
 }
 
-.copyright__image {
-
+.copyright__text::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url(../../icons/stack.svg#html-academy-logo);
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
